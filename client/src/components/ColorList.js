@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import axios from "axios";
+import axiosWithAuth from '../auth/axiosWithAuth';
+import PrivateRoute from "./PrivateRoute";
 
 const initialColor = {
   color: "",
