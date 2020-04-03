@@ -27,10 +27,10 @@ const BubblePage = () => {
   
 
   return ( //____________________insert div name and closing tag
-    <div classname appBubble> 
+    <> 
       <ColorList colors={colorList} updateColors={setColorList} />
       <Bubbles colors={colorList} />
-    </div>
+    </>
   );
 };
 

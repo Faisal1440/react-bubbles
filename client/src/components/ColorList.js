@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axiosWithAuth from '../auth/axiosWithAuth';
-import PrivateRoute from "./PrivateRoute";
+import AddNewColor from './AddNewColor';
+
 
 const initialColor = {
   color: "",
@@ -106,8 +107,9 @@ const ColorList = ({ colors, updateColors }) => {
           </div>
         </form>
       )}
-      <div className="spacer" />
-      {/* stretch - build another form here to add a color */}
+      <div className="spacer" /> 
+       <AddNewColor/>
+      
     </div>
   );
 };
